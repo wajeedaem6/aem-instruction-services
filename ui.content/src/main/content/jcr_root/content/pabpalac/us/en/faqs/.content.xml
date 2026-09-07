@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:template="/conf/pabpalac/settings/wcm/templates/page-content"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="FAQs"
+            sling:resourceType="pabpalac/components/page">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="pabpalac/components/container"
+                layout="responsiveGrid">
+            <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="pabpalac/components/container"
+                    layout="responsiveGrid">
+                <title
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="pabpalac/components/title"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="pabpalac/components/container"
+                        layout="responsiveGrid">
+                    <accordion
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="pabpalac/components/accordion"
+                            singleExpansion="true">
+                        <item_1
+                                cq:panelTitle="Who am I?"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Item 1"
+                                sling:resourceType="pabpalac/components/container"
+                                layout="responsiveGrid">
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="pabpalac/components/text"
+                                    text="&lt;p>Howdy, I’m Pablo. I’m a Software Engineer currently working as AEM Developer living in Aguascalientes, Mexico. I am a fan of technology, music, travel, web development and programming.&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>I am currently working at Globant and graduated from Universidad Politécnica de Aguascalientes.&lt;/p>&#xd;&#xa;"
+                                    textIsRich="true">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                            jcr:primaryType="nt:unstructured"
+                                            offset="1"
+                                            width="7"/>
+                                </cq:responsive>
+                            </text>
+                            <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="pabpalac/components/image"
+                                    alt="bike"
+                                    altValueFromDAM="false"
+                                    displayPopupTitle="true"
+                                    fileReference="/content/dam/we-retail/en/activities/biking/cycling_1.jpg"
+                                    imageFromPageImage="false"
+                                    isDecorative="false"
+                                    linkTarget="_self"
+                                    titleValueFromDAM="true">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                            jcr:primaryType="nt:unstructured"
+                                            offset="1"
+                                            width="2"/>
+                                </cq:responsive>
+                            </image>
+                        </item_1>
+                        <item_2
+                                cq:panelTitle="What do I do?"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Item 2"
+                                sling:resourceType="pabpalac/components/container"
+                                layout="responsiveGrid">
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="pabpalac/components/text"
+                                    text="&lt;p>Software engineer dedicated to AEM development.&lt;/p>&#xd;&#xa;"
+                                    textIsRich="true"/>
+                        </item_2>
+                        <item_1720371264872
+                                cq:panelTitle="AEM Experience"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="pabpalac/components/container">
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="pabpalac/components/text"
+                                    text="&lt;ol>&#xd;&#xa;&lt;li>InterContinental Hotels Group (Aguascalientes, Mexico).&lt;/li>&#xd;&#xa;&lt;li>Leroy Merlin (Madrid, Spain).&lt;/li>&#xd;&#xa;&lt;li>Anseris Personalization Module (Madrid, Spain).&lt;/li>&#xd;&#xa;&lt;li>Renta4 (Madrid, Spain)&lt;/li>&#xd;&#xa;&lt;li>Logista Group (Madrid, Spain&lt;/li>&#xd;&#xa;&lt;li>Repsol Corporate (Madrid, Spain).&lt;/li>&#xd;&#xa;&lt;li>MyRepsolNET (Madrid, Spain).&lt;/li>&#xd;&#xa;&lt;li>Repsol Spain/Repsol Ecommerce (Madrid, Spain).&lt;/li>&#xd;&#xa;&lt;li>Santander Help &amp;amp; Contact (Madrid, Spain).&lt;/li>&#xd;&#xa;&lt;li>Reed Exhibitions Global (Madrid, Spain).&lt;/li>&#xd;&#xa;&lt;li>Antonio Puig (Madrid, Spain).&lt;/li>&#xd;&#xa;&lt;li>GBM (Madrid, Spain).&lt;/li>&#xd;&#xa;&lt;li>PricewaterhouseCoopers (Aguascalientes, Mexico).&lt;/li>&#xd;&#xa;&lt;li>Hey Banco (Aguascalientes Mexico).&lt;/li>&#xd;&#xa;&lt;li>Grupo Delta (Aguascalientes, Mexico).&lt;/li>&#xd;&#xa;&lt;li>Banregio (Aguascalientes, Mexico).&lt;/li>&#xd;&#xa;&lt;li>Airmiles (Aguascalientes, Mexico).&lt;/li>&#xd;&#xa;&lt;li>Antonio Puig (Aguascalientes, Mexico).&lt;/li>&#xd;&#xa;&lt;/ol>&#xd;&#xa;"
+                                    textIsRich="true"/>
+                        </item_1720371264872>
+                    </accordion>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

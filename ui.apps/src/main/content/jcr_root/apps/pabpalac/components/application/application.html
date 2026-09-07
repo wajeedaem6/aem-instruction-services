@@ -1,0 +1,207 @@
+<!--/*
+    Copyright 2015 Adobe Systems Incorporated
+  
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+  
+        http://www.apache.org/licenses/LICENSE-2.0
+  
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+*/-->
+<div class="cmp-helloworld" data-cmp-is="helloworld">
+    <form>
+
+        <h1>Application Form</h1>
+
+        <div class="application-form">
+
+            <!-- General Questions -->
+            <section class="application-section">
+                <h2>General Questions</h2>
+
+                <div class="form-row">
+                    <label>Proposed Insured's Name</label>
+                    <span>${properties.proposedInsuredName}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>Birth Date</label>
+                    <span>${properties.birthDate}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>Gender</label>
+                    <span>${properties.gender}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>Passport No</label>
+                    <span>${properties.passportNo}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>Address</label>
+                    <span>${properties.address}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>Phone Number</label>
+                    <span>${properties.phoneNumber}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>Email Address</label>
+                    <span>${properties.emailAddress}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>ID Number</label>
+                    <span>${properties.idNumber}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>Social Security Number</label>
+                    <span>${properties.socialSecurityNumber}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>Status</label>
+                    <span>${properties.status}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>Occupation</label>
+                    <span>${properties.occupation}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>Are you a retiree?</label>
+                    <span>${properties.retired}</span>
+                </div>
+            </section>
+
+
+            <!-- Personal Details -->
+            <section class="application-section">
+                <h2>Personal Details</h2>
+
+                <div class="form-row">
+                    <label>Name of Beneficiary</label>
+                    <span>${properties.beneficiaryName}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>Bank Account</label>
+                    <span>${properties.bankAccount}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>Name and Address of Beneficiary's Bank</label>
+                    <span>${properties.beneficiaryBankAddress}</span>
+                </div>
+            </section>
+
+
+            <!-- Plan Choice -->
+            <section class="application-section">
+                <h2>Plan Choice</h2>
+
+                <div class="form-row">
+                    <label>Employee Plan Choice</label>
+                    <span>${properties.employeePlan}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>Spouse Plan Choice</label>
+                    <span>${properties.spousePlan}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>Children Plan Choice</label>
+                    <span>${properties.childrenPlan}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>Plan</label>
+                    <span>${properties.selectedPlan}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>Plan A Description</label>
+                    <span>${properties.planADescription}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>Plan B Description</label>
+                    <span>${properties.planBDescription}</span>
+                </div>
+            </section>
+
+
+            <!-- Policy -->
+            <section class="application-section">
+                <h2>The Policy</h2>
+
+                <div class="form-row">
+                    <label>Units</label>
+                    <span>${properties.units}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>Annual Premium</label>
+                    <span>${properties.annualPremium}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>Payment Mode</label>
+                    <span>${properties.paymentMode}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>Cash with Application</label>
+                    <span>${properties.cashWithApplication}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>Planned Modal Premium</label>
+                    <span>${properties.plannedModalPremium}</span>
+                </div>
+            </section>
+
+
+            <!-- Terms and Conditions -->
+            <section class="application-section">
+                <h2>Terms &amp; Conditions</h2>
+
+                <div class="form-row">
+                    <label>Terms &amp; Conditions</label>
+                    <span>${properties.termsAndConditions}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>Signature</label>
+                    <span>${properties.signature}</span>
+                </div>
+
+                <div class="form-row">
+                    <label>Date</label>
+                    <span>${properties.date}</span>
+                </div>
+            </section>
+
+        </div>
+    <!--<h2 class="cmp-helloworld__title"> application from</h2>
+    <div class="cmp-helloworld__item" data-sly-test="${properties.text}">
+        <p class="cmp-helloworld__item-label">Text property:</p>
+        <pre class="cmp-helloworld__item-output" data-cmp-hook-helloworld="property">${properties.text}</pre>
+    </div>
+    <div class="cmp-helloworld__item" data-sly-use.model="com.pabpalac.core.models.HelloWorldModel" data-sly-test="${model.message}">
+        <p class="cmp-helloworld__item-label">Model message:</p>
+        <pre class="cmp-helloworld__item-output"data-cmp-hook-helloworld="model">${model.message}</pre>
+    </div>
+</div>-->
