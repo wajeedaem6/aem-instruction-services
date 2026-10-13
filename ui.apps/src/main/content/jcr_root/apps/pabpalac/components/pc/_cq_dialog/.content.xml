@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+
+
+                    <applicantName
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Applicant Name"
+                            name="./applicantName"
+                            required="{Boolean}true"/>
+
+                    <fatherName
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Father / Husband Name"
+                            name="./fatherName"/>
+
+                    <mobileNumber
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Mobile Number"
+                            name="./mobileNumber"/>
+                    <aadhaarNumber
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Aadhaar Number"
+                            name="./aadhaarNumber"/>
+
+                    <email
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Email"
+                            name="./email"/>
+
+                    <plotNumber
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Plot Number"
+                            name="./plotNumber"
+                            required="{Boolean}true"/>
+
+                    <surveyNumber
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Survey Number"
+                            name="./surveyNumber"/>
+
+                    <plotSize
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Plot Size"
+                            fieldDescription="Example: 30 x 40"
+                            name="./plotSize"/>
+
+                    <plotArea
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                            fieldLabel="Plot Area (Sq. Ft.)"
+                            name="./plotArea"/>
+
+                    <plotType
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldLabel="Plot Type"
+                            name="./plotType">
+
+                        <items jcr:primaryType="nt:unstructured">
+
+                            <residential
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Residential"
+                                    value="residential"/>
+
+                            <commercial
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Commercial"
+                                    value="commercial"/>
+
+                            <agricultural
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Agricultural"
+                                    value="agricultural"/>
+
+                        </items>
+                    </plotType>
+                    <plotAddress
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                            fieldLabel="Plot Address"
+                            name="./plotAddress"/>
+
+                    <village
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Village / Area"
+                            name="./village"/>
+
+                    <district
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="District"
+                            name="./district"/>
+
+                    <state
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="State"
+                            name="./state"/>
+
+                    <pincode
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="PIN Code"
+                            name="./pincode"/>
+                    <registrationNumber
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Registration Number"
+                            name="./registrationNumber"/>
+
+                    <registrationDate
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                            fieldLabel="Registration Date"
+                            name="./registrationDate"/>
+
+                    <purchaseDate
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                            fieldLabel="Purchase Date"
+                            name="./purchaseDate"/>
+
+                    <registrationStatus
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldLabel="Registration Status"
+                            name="./registrationStatus">
+
+                        <items jcr:primaryType="nt:unstructured">
+
+                            <pending
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Pending"
+                                    value="pending"/>
+
+                            <approved
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Approved"
+                                    value="approved"/>
+
+                            <completed
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Completed"
+                                    value="completed"/>
+
+                            <rejected
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Rejected"
+                                    value="rejected"/>
+
+                        </items>
+                    </registrationStatus>
+                    <plotPrice
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                            fieldLabel="Plot Price"
+                            name="./plotPrice"/>
+
+                    <advanceAmount
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                            fieldLabel="Advance Amount"
+                            name="./advanceAmount"/>
+
+                    <paymentStatus
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldLabel="Payment Status"
+                            name="./paymentStatus">
+
+                        <items jcr:primaryType="nt:unstructured">
+
+                            <paid
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Paid"
+                                    value="paid"/>
+
+                            <partial
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Partially Paid"
+                                    value="partial"/>
+
+                            <pending
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Pending"
+                                    value="pending"/>
+                            <remarks
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                    fieldLabel="Remarks"
+                                    name="./remarks"/>
+
+                            <enableRegistration
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                    text="Enable Plot Registration"
+                                    name="./enableRegistration"
+                                    value="true"
+                                    uncheckedValue="false"/>
+
+                        </items>
+                    </paymentStatus>
+                    <remarks
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                            fieldLabel="Remarks"
+                            name="./remarks"/>
+
+                    <enableRegistration
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            text="Enable Plot Registration"
+                            name="./enableRegistration"
+                            value="true"
+                            uncheckedValue="false"/>
+                    <description
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                            fieldLabel="Description"
+                            name="./description"
+                            rows="5"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

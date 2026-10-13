@@ -1,299 +1,40 @@
+welcome to explane components
 
 
-<h1>this is explane components for pratice</h1>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="application-form">
 
-    <title>Explane Component</title>
+    <h2>${properties.headingStyle}</h2>
 
-    <style>
-        .explane-form {
-            width: 100%;
-            max-width: 700px;
-            font-family: Arial, sans-serif;
-        }
+    <p>
+        <strong>Alt Text:</strong>
+        ${properties.altText}
+    </p>
 
-        .form-field {
-            margin-bottom: 20px;
-        }
+    <p>
+        <strong>Full Name:</strong>
+        ${properties.fullName}
+    </p>
 
-        .form-field label {
-            display: block;
-            margin-bottom: 7px;
-            font-size: 16px;
-            color: #555;
-        }
+    <p>
+        <strong>Email:</strong>
+        ${properties.email}
+    </p>
 
-        .form-field input,
-        .form-field select,
-        .form-field textarea {
-            width: 100%;
-            box-sizing: border-box;
-            padding: 12px 14px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-            font-size: 16px;
-            color: #333;
-            background: #fff;
-        }
+    <p>
+        <strong>Phone Number:</strong>
+        ${properties.phone}
+    </p>
 
-        .form-field input:focus,
-        .form-field select:focus,
-        .form-field textarea:focus {
-            outline: none;
-            border-color: #666;
-        }
+    <p>
+        <strong>Subject:</strong>
+        ${properties.subject}
+    </p>
 
-        .form-field textarea {
-            min-height: 80px;
-            resize: vertical;
-        }
-
-        .checkbox-field {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        .checkbox-field input {
-            width: 18px;
-            height: 18px;
-        }
-
-        .checkbox-field label {
-            margin: 0;
-            font-size: 16px;
-            color: #333;
-        }
-
-        .link-field {
-            display: flex;
-        }
-
-        .link-field input {
-            border-radius: 3px 0 0 3px;
-        }
-
-        .link-button {
-            width: 55px;
-            border: 1px solid #ccc;
-            border-left: none;
-            background: #f5f5f5;
-            border-radius: 0 3px 3px 0;
-            cursor: pointer;
-        }
-
-        .submit-button {
-            padding: 12px 25px;
-            background: #333;
-            color: white;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .submit-button:hover {
-            background: #555;
-        }
-    </style>
-</head>
-
-<body>
-
-<div class="explane-form">
-
-    <!-- Policy Title -->
-    <div class="form-field">
-        <label for="policyTitle">Policy Title</label>
-        <input
-                type="text"
-                id="policyTitle"
-                name="policyTitle"
-                value="xyz">
+    <div>
+        <strong>Description:</strong>
+        <p>${properties.description}</p>
     </div>
-
-    <!-- Allowed Styles -->
-    <div class="form-field">
-        <label for="allowedStyles">Allowed Styles</label>
-        <input
-                type="text"
-                id="allowedStyles"
-                name="allowedStyles"
-                value="dfghjkl">
-    </div>
-
-    <!-- Enable Feature -->
-    <div class="checkbox-field">
-        <input
-                type="checkbox"
-                id="enableFeature"
-                name="enableFeature"
-                checked>
-
-        <label for="enableFeature">
-            Enable Feature
-        </label>
-    </div>
-
-    <!-- Alt Text -->
-    <div class="form-field">
-        <label for="altText">Alt Text</label>
-        <input
-                type="text"
-                id="altText"
-                name="altText"
-                value="sajeedefcd">
-    </div>
-
-    <!-- Heading Style -->
-    <div class="form-field">
-        <label for="headingStyle">Heading Style</label>
-
-        <select id="headingStyle" name="headingStyle">
-            <option value="h1">H1</option>
-            <option value="h2" selected>H2</option>
-            <option value="h3">H3</option>
-            <option value="h4">H4</option>
-            <option value="h5">H5</option>
-            <option value="h6">H6</option>
-        </select>
-    </div>
-
-    <!-- Link -->
-    <div class="form-field">
-        <label for="link">Link</label>
-
-        <div class="link-field">
-            <input
-                    type="text"
-                    id="link"
-                    name="link"
-                    value="/content/campaigns/we-retail/master">
-
-            <button
-                    type="button"
-                    class="link-button"
-                    title="Select Link">
-                ✓
-            </button>
-        </div>
-    </div>
-
-    <!-- Text and Description -->
-    <div class="form-field">
-        <label for="text">Text and Description</label>
-
-        <textarea
-                id="text"
-                name="text">lalala :)</textarea>
-    </div>
-
-    <!-- Submit -->
-    <button type="button" class="submit-button">
-        Submit
-    </button>
-
-</div>
-
-</body>
-</html>
-
-<div class="explane-component">
-
-    <sly data-sly-test="${properties.policyTitle}">
-        <sly data-sly-element="${properties.headingStyle || 'h2'}">
-            ${properties.policyTitle}
-        </sly>
-    </sly>
-
-    <p>${properties.allowedStyles}</p>
-
-    <p>${properties.altText}</p>
-
-    <p>${properties.text}</p>
-
-    <a data-sly-test="${properties.link}"
-       href="${properties.link}.html"
-       target="_blank"
-       rel="noopener noreferrer">
-        ${properties.link}
-    </a>
-
-</div>
-
-<div class="explane-component">
-
-    <!-- Policy Title with Dynamic Heading Style -->
-    <sly data-sly-test="${properties.policyTitle}">
-        <sly data-sly-element="${properties.headingStyle || 'h2'}">
-            ${properties.policyTitle}
-        </sly>
-    </sly>
-
-    <!-- Default CSS Classes -->
-    <div
-            data-sly-test="${properties.defaultCssClasses}"
-            class="${properties.defaultCssClasses}">
-
-        <!-- Allowed Styles -->
-        <div
-                data-sly-test="${properties.allowedStyles}"
-                class="allowed-styles">
-            ${properties.allowedStyles}
-        </div>
-
-        <!-- Alt Text -->
-        <div
-                data-sly-test="${properties.altText}"
-                class="alt-text">
-            ${properties.altText}
-        </div>
-
-        <!-- Text and Description -->
-        <div
-                data-sly-test="${properties.text}"
-                class="description">
-            ${properties.text}
-        </div>
-
-        <!-- Link -->
-        <sly data-sly-test="${properties.link}">
-            <a
-                    href="${properties.link}"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                ${properties.text || 'Read More'}
-            </a>
-        </sly>
-
-    </div>
-
-    <!-- Enable Feature -->
-    <sly data-sly-test="${properties.enableFeature == 'true'}">
-        <div class="feature-enabled">
-            Feature is enabled
-        </div>
-    </sly>
 
 </div>
 
 
-
-
-
-<div class="cmp-helloworld" data-cmp-is="helloworld">
-    <h2 class="cmp-helloworld__title">Hello World Component</h2>
-    <div class="cmp-helloworld__item" data-sly-test="${properties.text}">
-        <p class="cmp-helloworld__item-label">Text property:</p>
-        <pre class="cmp-helloworld__item-output" data-cmp-hook-helloworld="property">${properties.text}</pre>
-    </div>
-    <div class="cmp-helloworld__item" data-sly-use.model="com.pabpalac.core.models.HelloWorldModel" data-sly-test="${model.message}">
-        <p class="cmp-helloworld__item-label">Model message:</p>
-        <pre class="cmp-helloworld__item-output"data-cmp-hook-helloworld="model">${model.message}</pre>
-    </div>
-</div>

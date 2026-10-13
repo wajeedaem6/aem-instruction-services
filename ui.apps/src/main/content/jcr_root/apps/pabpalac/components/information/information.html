@@ -1,0 +1,123 @@
+<!--/*
+    Copyright 2015 Adobe Systems Incorporated
+  
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+  
+        http://www.apache.org/licenses/LICENSE-2.0
+  
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+*/-->
+
+
+
+<div class="student-details">
+
+    <!-- Header -->
+    <div class="student-header">
+        <h2 data-sly-test="${properties.studentName}">
+            ${properties.studentName}
+        </h2>
+
+        <p data-sly-test="${properties.studentId}">
+            Student ID: ${properties.studentId}
+        </p>
+    </div>
+
+    <!-- Course -->
+    <div class="student-field" data-sly-test="${properties.course}">
+        <strong>Course:</strong>
+
+        <span data-sly-test="${properties.course == 'computer-science'}">
+            Computer Science
+        </span>
+
+        <span data-sly-test="${properties.course == 'information-technology'}">
+            Information Technology
+        </span>
+
+        <span data-sly-test="${properties.course == 'business-administration'}">
+            Business Administration
+        </span>
+
+        <span data-sly-test="${properties.course == 'engineering'}">
+            Engineering
+        </span>
+    </div>
+
+    <!-- Email -->
+    <div class="student-field" data-sly-test="${properties.email}">
+        <strong>Email:</strong>
+        <span>${properties.email}</span>
+    </div>
+
+    <!-- Parent Name -->
+    <div class="student-field" data-sly-test="${properties.parentName}">
+        <strong>Parent / Guardian:</strong>
+        <span>${properties.parentName}</span>
+    </div>
+
+    <!-- Phone -->
+    <div class="student-field" data-sly-test="${properties.phone}">
+        <strong>Phone Number:</strong>
+        <span>${properties.phone}</span>
+    </div>
+
+    <!-- Gender -->
+    <div class="student-field" data-sly-test="${properties.gender}">
+        <strong>Gender:</strong>
+
+        <span data-sly-test="${properties.gender == 'male'}">
+            Male
+        </span>
+
+        <span data-sly-test="${properties.gender == 'female'}">
+            Female
+        </span>
+
+        <span data-sly-test="${properties.gender == 'other'}">
+            Other
+        </span>
+    </div>
+
+    <!-- Address -->
+    <div class="student-field" data-sly-test="${properties.address}">
+        <strong>Address:</strong>
+        <span>${properties.address}</span>
+    </div>
+
+    <!-- Student Status -->
+    <div class="student-field" data-sly-test="${properties.studentStatus}">
+        <strong>Status:</strong>
+
+        <span data-sly-test="${properties.studentStatus == 'active'}"
+              class="status-active">
+            Active
+        </span>
+
+        <span data-sly-test="${properties.studentStatus == 'inactive'}"
+              class="status-inactive">
+            Inactive
+        </span>
+
+        <span data-sly-test="${properties.studentStatus == 'graduated'}"
+              class="status-graduated">
+            Graduated
+        </span>
+    </div>
+
+    <!-- Button -->
+    <button type="button" class="student-button">
+        Show Message
+    </button>
+
+    <!-- Message -->
+    <div class="student-message"></div>
+
+</div>
+

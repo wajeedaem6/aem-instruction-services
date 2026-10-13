@@ -1,0 +1,132 @@
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.All @ categories='pabpalac.core'}"/>
+</sly>
+<div class="student-details">
+
+    <!-- Header -->
+    <div class="student-header">
+
+        <h2 data-sly-test="${properties.studentName}">
+            ${properties.studentName}
+        </h2>
+
+    </div>
+
+
+    <!-- Student ID -->
+    <div class="student-field" data-sly-test="${properties.studentId}">
+        <strong>Student ID:</strong>
+        <span>${properties.studentId}</span>
+    </div>
+
+
+    <!-- Email -->
+    <div class="student-field" data-sly-test="${properties.email}">
+        <strong>Email:</strong>
+        <span>${properties.email}</span>
+    </div>
+
+
+    <!-- Phone -->
+    <div class="student-field" data-sly-test="${properties.phone}">
+        <strong>Phone Number:</strong>
+        <span>${properties.phone}</span>
+    </div>
+
+
+    <!-- Date of Birth -->
+    <div class="student-field" data-sly-test="${properties.dateOfBirth}">
+        <strong>Date of Birth:</strong>
+        <span>${properties.dateOfBirth}</span>
+    </div>
+
+
+    <!-- Gender -->
+    <div class="student-field" data-sly-test="${properties.gender}">
+        <strong>Gender:</strong>
+
+        <span data-sly-test="${properties.gender == 'male'}">Male</span>
+        <span data-sly-test="${properties.gender == 'female'}">Female</span>
+        <span data-sly-test="${properties.gender == 'other'}">Other</span>
+    </div>
+
+
+    <!-- Course -->
+    <div class="student-field" data-sly-test="${properties.course}">
+        <strong>Course:</strong>
+
+        <span data-sly-test="${properties.course == 'computer-science'}">
+            Computer Science
+        </span>
+
+        <span data-sly-test="${properties.course == 'information-technology'}">
+            Information Technology
+        </span>
+
+        <span data-sly-test="${properties.course == 'business-administration'}">
+            Business Administration
+        </span>
+
+        <span data-sly-test="${properties.course == 'engineering'}">
+            Engineering
+        </span>
+    </div>
+
+
+    <!-- Year -->
+    <div class="student-field" data-sly-test="${properties.year}">
+        <strong>Year:</strong>
+        <span>${properties.year}</span>
+    </div>
+
+
+    <!-- Address -->
+    <div class="student-field" data-sly-test="${properties.address}">
+        <strong>Address:</strong>
+        <span>${properties.address}</span>
+    </div>
+
+
+    <!-- Parent / Guardian -->
+    <div class="student-field" data-sly-test="${properties.parentName}">
+        <strong>Parent / Guardian:</strong>
+        <span>${properties.parentName}</span>
+    </div>
+
+
+    <!-- Enrollment Date -->
+    <div class="student-field" data-sly-test="${properties.enrollmentDate}">
+        <strong>Enrollment Date:</strong>
+        <span>${properties.enrollmentDate}</span>
+    </div>
+
+
+    <!-- Student Status -->
+    <div class="student-field" data-sly-test="${properties.studentStatus}">
+        <strong>Status:</strong>
+
+        <span data-sly-test="${properties.studentStatus == 'active'}">
+            Active
+        </span>
+
+        <span data-sly-test="${properties.studentStatus == 'inactive'}">
+            Inactive
+        </span>
+
+        <span data-sly-test="${properties.studentStatus == 'graduated'}">
+            Graduated
+        </span>
+    </div>
+
+
+    <!-- Active Status -->
+    <div
+            class="student-active"
+            data-sly-test="${properties.enableStudent == 'true'}">
+
+        Student is Active
+
+    </div>
+
+</div>
+

@@ -1,0 +1,107 @@
+
+<div class="police-registration">
+
+    <div class="police-header">
+        <h2>Online Police Registration</h2>
+        <p>Please review the submitted registration details.</p>
+    </div>
+
+    <div class="registration-card">
+
+        <!-- Applicant Details -->
+        <h3>Applicant Details</h3>
+
+        <div class="registration-grid">
+
+            <div class="registration-field">
+                <label>Applicant Name</label>
+                <span>${properties.applicantName}</span>
+            </div>
+
+            <div class="registration-field">
+                <label>Father / Husband Name</label>
+                <span>${properties.fatherName}</span>
+            </div>
+
+            <div class="registration-field">
+                <label>Mobile Number</label>
+                <span>${properties.mobileNumber}</span>
+            </div>
+
+            <div class="registration-field">
+                <label>Email</label>
+                <span>${properties.email}</span>
+            </div>
+
+            <div class="registration-field">
+                <label>Date of Birth</label>
+                <span>${properties.dateOfBirth}</span>
+            </div>
+
+            <div class="registration-field">
+                <label>Gender</label>
+                <span>${properties.gender}</span>
+            </div>
+
+        </div>
+
+        <!-- Complaint Details -->
+        <h3>Complaint Details</h3>
+
+        <div class="registration-grid">
+
+            <div class="registration-field">
+                <label>Police Station</label>
+                <span>${properties.policeStation}</span>
+            </div>
+
+            <div class="registration-field">
+                <label>Complaint Type</label>
+                <span>${properties.complaintType}</span>
+            </div>
+
+            <div class="registration-field">
+                <label>Incident Date</label>
+                <span>${properties.incidentDate}</span>
+            </div>
+
+            <div class="registration-field">
+                <label>Incident Location</label>
+                <span>${properties.incidentLocation}</span>
+            </div>
+
+        </div>
+
+        <!-- Address -->
+        <div class="registration-full-field">
+            <label>Address</label>
+            <p>${properties.address}</p>
+        </div>
+
+        <!-- Complaint Description -->
+        <div class="registration-full-field">
+            <label>Complaint Description</label>
+            <p>${properties.description}</p>
+        </div>
+
+        <!-- Additional Information -->
+        <div class="registration-full-field">
+            <label>Additional Information</label>
+            <p>${properties.additionalInformation}</p>
+        </div>
+
+        <!-- Declaration -->
+        <div class="declaration">
+            <input type="checkbox"
+                   disabled
+                   checked="${properties.declaration}">
+            <span>I confirm that the information provided is correct.</span>
+        </div>
+
+        <div class="registration-footer">
+            <button type="button">Submit Registration</button>
+        </div>
+
+    </div>
+</div>
+

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+
+                    <!-- Student Name -->
+                    <studentName
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Student Name"
+                            name="./studentName"
+                            required="{Boolean}true"/>
+
+                    <!-- Student ID -->
+                    <studentId
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Student ID"
+                            name="./studentId"/>
+
+                    <!-- Email -->
+                    <email
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/emailfield"
+                            fieldLabel="Email"
+                            name="./email"
+                            required="{Boolean}true"/>
+
+                    <!-- Phone -->
+                    <phone
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Phone Number"
+                            name="./phone"/>
+
+                    <!-- Date of Birth -->
+                    <dateOfBirth
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                            fieldLabel="Date of Birth"
+                            name="./dateOfBirth"
+                            type="date"/>
+
+                    <!-- Gender -->
+                    <gender
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldLabel="Gender"
+                            name="./gender">
+
+                        <items jcr:primaryType="nt:unstructured">
+
+                            <male
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Male"
+                                    value="male"/>
+
+                            <female
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Female"
+                                    value="female"/>
+
+                            <other
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Other"
+                                    value="other"/>
+
+                        </items>
+
+                    </gender>
+
+                    <!-- Course -->
+                    <course
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldLabel="Course"
+                            name="./course">
+
+                        <items jcr:primaryType="nt:unstructured">
+
+                            <computerScience
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Computer Science"
+                                    value="computer-science"/>
+
+                            <informationTechnology
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Information Technology"
+                                    value="information-technology"/>
+
+                            <business
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Business Administration"
+                                    value="business-administration"/>
+
+                            <engineering
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Engineering"
+                                    value="engineering"/>
+
+                        </items>
+
+                    </course>
+
+                    <!-- Year -->
+                    <year
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                            fieldLabel="Year"
+                            name="./year"
+                            min="1"
+                            max="10"/>
+
+                    <!-- Address -->
+                    <address
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                            fieldLabel="Address"
+                            name="./address"
+                            rows="4"/>
+
+                    <!-- Parent Name -->
+                    <parentName
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Parent / Guardian Name"
+                            name="./parentName"/>
+
+                    <!-- Enrollment Date -->
+                    <enrollmentDate
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                            fieldLabel="Enrollment Date"
+                            name="./enrollmentDate"
+                            type="date"/>
+
+                    <!-- Student Status -->
+                    <studentStatus
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldLabel="Student Status"
+                            name="./studentStatus">
+
+                        <items jcr:primaryType="nt:unstructured">
+
+                            <active
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Active"
+                                    value="active"/>
+
+                            <inactive
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Inactive"
+                                    value="inactive"/>
+
+                            <graduated
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Graduated"
+                                    value="graduated"/>
+
+                        </items>
+
+                    </studentStatus>
+
+                    <!-- Enable Student -->
+                    <enableStudent
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            fieldLabel="Enable Student"
+                            name="./enableStudent"
+                            text="Student is Active"
+                            value="true"
+                            uncheckedValue="false"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

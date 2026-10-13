@@ -1,0 +1,294 @@
+
+/* =========================================
+   Police Registration Component
+   ========================================= */
+
+.police-registration {
+    width: 100%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263238;
+}
+
+/* =========================================
+   Header
+   ========================================= */
+
+.police-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.police-header h2 {
+    margin: 0 0 8px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #17365d;
+}
+
+.police-header p {
+    margin: 0;
+    font-size: 15px;
+    color: #6b7280;
+}
+
+/* =========================================
+   Main Card
+   ========================================= */
+
+.registration-card {
+    background: #ffffff;
+    border: 1px solid #e1e5ea;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================================
+   Section Heading
+   ========================================= */
+
+.registration-card h3 {
+    margin: 25px 0 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e5e7eb;
+    font-size: 20px;
+    color: #17365d;
+}
+
+.registration-card h3:first-child {
+    margin-top: 0;
+}
+
+/* =========================================
+   Dynamic Grid
+   ========================================= */
+
+.registration-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px 25px;
+    margin-bottom: 25px;
+}
+
+/* =========================================
+   Individual Fields
+   ========================================= */
+
+.registration-field {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 15px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+}
+
+.registration-field:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+.registration-field label,
+.registration-full-field label {
+    margin-bottom: 7px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.registration-field span {
+    display: block;
+    min-height: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #1e293b;
+    word-break: break-word;
+}
+
+/* =========================================
+   Full Width Fields
+   ========================================= */
+
+.registration-full-field {
+    margin-top: 20px;
+    padding: 18px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+.registration-full-field p {
+    margin: 5px 0 0;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #334155;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+/* =========================================
+   Declaration
+   ========================================= */
+
+.declaration {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+    padding: 15px;
+    background: #f1f5f9;
+    border-radius: 8px;
+    border-left: 4px solid #17365d;
+}
+
+.declaration input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    cursor: not-allowed;
+    accent-color: #17365d;
+}
+
+.declaration span {
+    font-size: 14px;
+    color: #475569;
+}
+
+/* =========================================
+   Footer
+   ========================================= */
+
+.registration-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.registration-footer button {
+    border: none;
+    border-radius: 7px;
+    padding: 12px 28px;
+    background: #17365d;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.registration-footer button:hover {
+    background: #0f2744;
+    transform: translateY(-1px);
+}
+
+.registration-footer button:active {
+    transform: translateY(0);
+}
+
+/* =========================================
+   Tablet
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .police-registration {
+        margin: 25px auto;
+        padding: 0 15px;
+    }
+
+    .police-header h2 {
+        font-size: 25px;
+    }
+
+    .registration-card {
+        padding: 22px;
+    }
+
+    .registration-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .registration-card h3 {
+        font-size: 18px;
+    }
+
+    .registration-footer {
+        justify-content: center;
+    }
+
+    .registration-footer button {
+        width: 100%;
+    }
+}
+
+/* =========================================
+   Mobile
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .police-registration {
+        margin: 15px auto;
+        padding: 0 10px;
+    }
+
+    .police-header {
+        margin-bottom: 18px;
+    }
+
+    .police-header h2 {
+        font-size: 22px;
+    }
+
+    .police-header p {
+        font-size: 13px;
+    }
+
+    .registration-card {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .registration-card h3 {
+        margin-top: 20px;
+        font-size: 17px;
+    }
+
+    .registration-field,
+    .registration-full-field {
+        padding: 13px;
+    }
+
+    .registration-field label,
+    .registration-full-field label {
+        font-size: 12px;
+    }
+
+    .registration-field span,
+    .registration-full-field p {
+        font-size: 14px;
+    }
+
+    .declaration {
+        align-items: flex-start;
+        padding: 12px;
+    }
+
+    .declaration span {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
+
+

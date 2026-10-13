@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+
+                    <applicantName
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Applicant Name"
+                            name="./applicantName"
+                            required="{Boolean}true"/>
+
+                    <!-- Father / Husband Name -->
+                    <fatherName
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Father / Husband Name"
+                            name="./fatherName"/>
+
+                    <!-- Mobile Number -->
+                    <mobileNumber
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Mobile Number"
+                            name="./mobileNumber"
+                            required="{Boolean}true"/>
+
+                    <!-- Email -->
+                    <email
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Email"
+                            name="./email"/>
+
+                    <!-- Date of Birth -->
+                    <dateOfBirth
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                            fieldLabel="Date of Birth"
+                            name="./dateOfBirth"
+                            type="date"/>
+
+                    <!-- Gender -->
+                    <gender
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldLabel="Gender"
+                            name="./gender">
+
+                        <items jcr:primaryType="nt:unstructured">
+                            <male
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Male"
+                                    value="Male"/>
+
+                            <female
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Female"
+                                    value="Female"/>
+
+                            <other
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Other"
+                                    value="Other"/>
+                        </items>
+                    </gender>
+
+                    <!-- Police Station -->
+                    <policeStation
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Police Station"
+                            name="./policeStation"
+                            required="{Boolean}true"/>
+
+                    <!-- Complaint Type -->
+                    <complaintType
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldLabel="Complaint Type"
+                            name="./complaintType"
+                            required="{Boolean}true">
+
+                        <items jcr:primaryType="nt:unstructured">
+                            <lostDocument
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Lost Document"
+                                    value="Lost Document"/>
+
+                            <theft
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Theft"
+                                    value="Theft"/>
+
+                            <cyberCrime
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Cyber Crime"
+                                    value="Cyber Crime"/>
+
+                            <missingPerson
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Missing Person"
+                                    value="Missing Person"/>
+
+                            <other
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Other"
+                                    value="Other"/>
+                        </items>
+                    </complaintType>
+
+                    <!-- Incident Date -->
+                    <incidentDate
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                            fieldLabel="Incident Date"
+                            name="./incidentDate"
+                            type="date"/>
+
+                    <!-- Incident Location -->
+                    <incidentLocation
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Incident Location"
+                            name="./incidentLocation"/>
+
+                    <!-- Address -->
+                    <address
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                            fieldLabel="Address"
+                            name="./address"
+                            rows="4"/>
+
+                    <!-- Complaint Description -->
+                    <description
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                            fieldLabel="Complaint Description"
+                            name="./description"
+                            rows="6"
+                            required="{Boolean}true"/>
+
+                    <!-- Additional Information -->
+                    <additionalInformation
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                            fieldLabel="Additional Information"
+                            name="./additionalInformation"
+                            rows="4"/>
+
+                    <!-- Declaration -->
+                    <declaration
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            text="I confirm that the information provided is correct."
+                            name="./declaration"
+                            value="true"
+                            uncheckedValue="false"/>
+
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>
