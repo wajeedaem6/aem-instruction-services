@@ -1,0 +1,227 @@
+/*
+
+*/
+/* ========================================
+
+/* =========================================
+   Plot Registration Main Container
+   ========================================= */
+
+.plot-registration {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #f7f8fa;
+    border-radius: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   Header
+   ========================================= */
+
+.plot-registration__header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.plot-registration__header h2 {
+    margin: 0 0 8px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #222;
+}
+
+.plot-registration__header p {
+    margin: 0;
+    color: #666;
+    font-size: 15px;
+}
+
+
+/* =========================================
+   Section
+   ========================================= */
+
+.plot-section {
+    background: #ffffff;
+    padding: 24px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.plot-section h3 {
+    margin: 0 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+}
+
+
+/* =========================================
+   Grid
+   ========================================= */
+
+.plot-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+/* =========================================
+   Individual Field
+   ========================================= */
+
+.plot-field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.plot-field--full {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================================
+   Label
+   ========================================= */
+
+.plot-field label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+}
+
+
+/* =========================================
+   Field Value
+   ========================================= */
+
+.plot-value {
+    min-height: 20px;
+    padding: 12px 14px;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    color: #222;
+    font-size: 15px;
+    line-height: 1.5;
+    word-break: break-word;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   Status
+   ========================================= */
+
+.status {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   Registration Status
+   ========================================= */
+
+.plot-section:nth-of-type(4) .status {
+    background: #eef6ff;
+    border-color: #b8d8ff;
+}
+
+
+/* =========================================
+   Payment Section
+   ========================================= */
+
+.plot-section:nth-of-type(5) .plot-value {
+    font-weight: 600;
+}
+
+
+/* =========================================
+   Hover Effect
+   ========================================= */
+
+.plot-field:hover .plot-value {
+    border-color: #aaa;
+    transition: border-color 0.2s ease;
+}
+
+
+/* =========================================
+   Responsive - Tablet
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .plot-registration {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .plot-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .plot-field--full {
+        grid-column: auto;
+    }
+
+    .plot-registration__header h2 {
+        font-size: 25px;
+    }
+
+    .plot-section {
+        padding: 18px;
+    }
+}
+
+
+/* =========================================
+   Responsive - Mobile
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .plot-registration {
+        margin: 10px;
+        padding: 12px;
+    }
+
+    .plot-section {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .plot-section h3 {
+        font-size: 18px;
+    }
+
+    .plot-field label {
+        font-size: 13px;
+    }
+
+    .plot-value {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .plot-registration__header h2 {
+        font-size: 22px;
+    }
+
+    .plot-registration__header p {
+        font-size: 13px;
+    }
+}
+
