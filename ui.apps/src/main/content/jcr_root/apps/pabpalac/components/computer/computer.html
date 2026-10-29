@@ -1,305 +1,80 @@
-<!--/*
-    Copyright 2015 Adobe Systems Incorporated
-  
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-  
-        http://www.apache.org/licenses/LICENSE-2.0
-  
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
 
-<sly data-sly-use.model="com.pabpalac.core.models.PlotRegistrationModel"/>
+<div class="personal-details">
 
-<div class="plot-registration">
+    <h2>Personal Details</h2>
 
-    <div class="plot-registration__header">
-        <h2>Plot Registration Details</h2>
-        <p>Please review the registered plot information below.</p>
-    </div>
+    <div class="details-card">
 
-    <-- Applicant Details -->
-<div class="plot-section">
-    <h3>Applicant Details</h3>
-welcome to Registration
-    <div class="plot-grid">
-
-        <div class="plot-field">
-            <label>Applicant Name</label>
-            <div class="plot-value">${properties.applicantName}</div>
+        <div class="details-field">
+            <label>Full Name:</label>
+            <span>${properties.fullName}</span>
         </div>
 
-        <div class="plot-field">
-            <label>Father / Husband Name</label>
-            <div class="plot-value">${properties.fatherName}</div>
+        <div class="details-field">
+            <label>Father / Husband Name:</label>
+            <span>${properties.fatherName}</span>
         </div>
 
-        <div class="plot-field">
-            <label>Mobile Number</label>
-            <div class="plot-value">${properties.mobileNumber}</div>
+        <div class="details-field">
+            <label>Highest Qualification:</label>
+            <span>${properties.qualification}</span>
         </div>
 
-        <div class="plot-field">
-            <label>Email</label>
-            <div class="plot-value">${properties.email}</div>
+        <div class="details-field">
+            <label>Occupation:</label>
+            <span>${properties.occupation}</span>
         </div>
 
-        <div class="plot-field">
-            <label>Aadhaar Number</label>
-            <div class="plot-value">${properties.aadhaarNumber}</div>
+        <div class="details-field">
+            <label>Age:</label>
+            <span>${properties.age}</span>
         </div>
 
-    </div>
-</div>
-
-<!-- Plot Details -->
-<div class="plot-section">
-    <h3>Plot Details</h3>
-
-    <div class="plot-grid">
-
-        <div class="plot-field">
-            <label>Plot Number</label>
-            <div class="plot-value">${properties.plotNumber}</div>
+        <div class="details-field">
+            <label>Height:</label>
+            <span>${properties.height}</span>
         </div>
 
-        <div class="plot-field">
-            <label>Survey Number</label>
-            <div class="plot-value">${properties.surveyNumber}</div>
+        <div class="details-field">
+            <label>Complexion:</label>
+            <span>${properties.complexion}</span>
         </div>
 
-        <div class="plot-field">
-            <label>Plot Size</label>
-            <div class="plot-value">${properties.plotSize}</div>
+        <div class="details-field">
+            <label>Religion:</label>
+            <span>${properties.religion}</span>
         </div>
 
-        <div class="plot-field">
-            <label>Plot Area</label>
-            <div class="plot-value">${properties.plotArea} Sq. Ft.</div>
+        <div class="details-field">
+            <label>Grandfather Name:</label>
+            <span>${properties.grandFatherName}</span>
         </div>
 
-        <div class="plot-field">
-            <label>Plot Type</label>
-            <div class="plot-value">${properties.plotType}</div>
+        <div class="details-field">
+            <label>Brother Name:</label>
+            <span>${properties.brotherName}</span>
+        </div>
+
+        <div class="details-field">
+            <label>Sister Name:</label>
+            <span>${properties.sisterName}</span>
+        </div>
+
+        <div class="details-field">
+            <label>Brother-in-Law Name:</label>
+            <span>${properties.brotherInLawName}</span>
+        </div>
+
+        <div class="details-field">
+            <label>Address:</label>
+            <span>${properties.address}</span>
+        </div>
+
+        <div class="details-field">
+            <label>Mobile Number:</label>
+            <span>${properties.mobileNumber}</span>
         </div>
 
     </div>
-</div>
-
-<!-- Plot Location -->
-<div class="plot-section">
-    <h3>Plot Location</h3>
-
-    <div class="plot-grid">
-
-        <div class="plot-field plot-field--full">
-            <label>Plot Address</label>
-            <div class="plot-value">${properties.plotAddress}</div>
-        </div>
-
-        <div class="plot-field">
-            <label>Village / Area</label>
-            <div class="plot-value">${properties.village}</div>
-        </div>
-
-        <div class="plot-field">
-            <label>District</label>
-            <div class="plot-value">${properties.district}</div>
-        </div>
-
-        <div class="plot-field">
-            <label>State</label>
-            <div class="plot-value">${properties.state}</div>
-        </div>
-
-        <div class="plot-field">
-            <label>PIN Code</label>
-            <div class="plot-value">${properties.pincode}</div>
-        </div>
-
-    </div>
-</div>
-
-<!-- Registration Details -->
-<div class="plot-section">
-    <h3>Registration Details</h3>
-
-    <div class="plot-grid">
-
-        <div class="plot-field">
-            <label>Registration Number</label>
-            <div class="plot-value">${properties.registrationNumber}</div>
-        </div>
-
-        <div class="plot-field">
-            <label>Registration Date</label>
-            <div class="plot-value">${properties.registrationDate}</div>
-        </div>
-
-        <div class="plot-field">
-            <label>Purchase Date</label>
-            <div class="plot-value">${properties.purchaseDate}</div>
-        </div>
-
-        <div class="plot-field">
-            <label>Registration Status</label>
-            <div class="plot-value status">
-                ${properties.registrationStatus}
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<!-- Payment Details -->
-<div class="plot-section">
-    <h3>Payment Details</h3>
-
-    <div class="plot-grid">
-
-        <div class="plot-field">
-            <label>Plot Price</label>
-            <div class="plot-value">
-                ₹ ${properties.plotPrice}
-            </div>
-        </div>
-
-        <div class="plot-field">
-            <label>Advance Amount</label>
-            <div class="plot-value">
-                ₹ ${properties.advanceAmount}
-            </div>
-        </div>
-
-        <div class="plot-field">
-            <label>Payment Status</label>
-            <div class="plot-value status">
-                ${properties.paymentStatus}
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<!-- Additional Information -->
-<div class="plot-section">
-
-    <h3>Additional Information</h3>
-
-    <div class="plot-field plot-field--full">
-        <label>Remarks</label>
-        <div class="plot-value">
-            ${properties.remarks}
-        </div>
-    </div>
 
 </div>
-
-</div>
-
-<style>
-
-    .plot-registration {
-        max-width: 1100px;
-        margin: 40px auto;
-        padding: 30px;
-        background: #f7f8fa;
-        border-radius: 12px;
-        font-family: Arial, sans-serif;
-        box-sizing: border-box;
-    }
-
-    .plot-registration__header {
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .plot-registration__header h2 {
-        margin: 0 0 8px;
-        font-size: 30px;
-    }
-
-    .plot-registration__header p {
-        margin: 0;
-        color: #666;
-    }
-
-    .plot-section {
-        background: #ffffff;
-        padding: 24px;
-        margin-bottom: 22px;
-        border-radius: 10px;
-        border: 1px solid #ddd;
-    }
-
-    .plot-section h3 {
-        margin: 0 0 20px;
-        padding-bottom: 10px;
-        border-bottom: 2px solid #ddd;
-        font-size: 20px;
-    }
-
-    .plot-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
-    .plot-field {
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
-    }
-
-    .plot-field--full {
-        grid-column: 1 / -1;
-    }
-
-    .plot-field label {
-        font-size: 14px;
-        font-weight: bold;
-        color: #555;
-    }
-
-    .plot-value {
-        min-height: 20px;
-        padding: 12px 14px;
-        background: #f5f5f5;
-        border: 1px solid #ddd;
-        border-radius: 6px;
-        color: #222;
-        word-break: break-word;
-    }
-
-    .status {
-        text-transform: capitalize;
-        font-weight: bold;
-    }
-
-    @media (max-width: 768px) {
-
-        .plot-registration {
-            margin: 20px;
-            padding: 15px;
-        }
-
-        .plot-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .plot-field--full {
-            grid-column: auto;
-        }
-
-        .plot-registration__header h2 {
-            font-size: 24px;
-        }
-    }
-
-</style>
-
-
